@@ -11,7 +11,7 @@ globalThis.addEventListener('fetch', (event) => {
 	// ...
 
 	event.respondWith(
-		global.caches.open(`${CACHE_NAME}-tiles`).then((cache) =>
+		globalThis.caches.open(`${CACHE_NAME}-tiles`).then((cache) =>
 			cache.match(request).then((response) => {
 				// If there is a match from the cache
 				if (response) {
