@@ -1,0 +1,16 @@
+{
+	"name": "bmgen",
+	"short_name": "bmgen",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#e0e0e0",
+	"description": "Emoji Suite Generator",
+	"theme_color": "#2A3443",
+	"icons": [
+		{
+			"src": "./icons/favicon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

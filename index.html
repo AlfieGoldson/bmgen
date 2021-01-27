@@ -11,6 +11,10 @@
 			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="shortcut icon" href="./icons/favicon.png" />
+		<link rel="manifest" href="./manifest.json" />
+		<meta name="theme-color" content="#e0e0e0" />
+		<script src="./app.js" defer></script>
 	</head>
 	<body>
 		<div id="App">
@@ -20,25 +24,4 @@
 			<input id="out" type="text" />
 		</div>
 	</body>
-	<script>
-		function genBM() {
-			const input = document.getElementById('input');
-			const count = parseInt(input.value);
-			const emotes = ['😂', '😹', '😭', '🤣', '💀'];
-
-			let out = '';
-			for (let i = 0; i < count; i++) {
-				out += emotes[Math.round(Math.random() * (emotes.length - 1))];
-			}
-
-			const outInput = document.getElementById('out');
-			outInput.value = out;
-			outInput.select();
-			outInput.setSelectionRange(0, 99999);
-
-			document.execCommand('copy');
-
-			console.log(out);
-		}
-	</script>
 </html>
