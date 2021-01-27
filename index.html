@@ -3,12 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>BM Gen</title>
+		<title>Emoji Suite Generator</title>
+		<link rel="stylesheet" href="./main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<input id="input" type="number" value="16" />
-		<button onclick="genBM()">Generate</button>
-		<input id="out" type="text" />
+		<div id="App">
+			<h1>Emoji Suite Generator</h1>
+			<input id="input" type="number" value="16" />
+			<button onclick="genBM()">Generate</button>
+			<input id="out" type="text" />
+		</div>
 	</body>
 	<script>
 		function genBM() {
