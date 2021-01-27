@@ -5,7 +5,7 @@ const CACHING_DURATION = 7 * 24 * 3600;
 // Verbose logging or not
 const DEBUG = true;
 
-global.self.addEventListener('fetch', (event) => {
+globalThis.addEventListener('fetch', (event) => {
 	const { request } = event;
 
 	// ...
